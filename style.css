@@ -4,17 +4,23 @@
     font-style: normal;
 }
 
-.roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
 .roboto-black {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
-  }
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}  
   
 * {
     margin: 0;
@@ -25,32 +31,44 @@
     font-style: normal;
 }
 
-.header {
-    margin: 0 48px;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-hero,
+.footer {
     background-color: #1F2937;
     color: #F9FAF8;
+}
+
+.section-hero {
+    padding: 12px 48px 48px;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 12px;
 }
 
 .logo {
     font-size: 24px;
 }
 
-.links{
-    margin: 0;
-    padding: 0;
+.links {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.subsection-hero {
     display: flex;
 }
 
-.section-hero {
-    margin: 0 48px;
-    background-color: #1F2937;
-    color: #F9FAF8;
-    display: flex;
-    justify-content: space-between;
+.left-section {
+    width: 450px;
 }
 
 .hero-main-text {
@@ -58,15 +76,55 @@
 }
 
 .hero-second-text {
-    color: #E5E7EB;
     font-size: 18px;
+    color: #E5E7EB;
 }
 
-
-
 button {
-    color: white;
-    background-color: #3882F6;
-    padding: 5px 20px;
-    border-radius: 5px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+
+.section-info {
+    color: #1F2937;
+    text-align: center;
+    padding: 48px;
+}
+
+.info-header-text {
+    font-size: 36px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.section-quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    width: 790px;
+}
+
+.quote-text {
+    font-size: 36px;
+}
+
+.quote-credit {
+    align-self: flex-end;
+}
+
+.footer {
+    padding: 1em;
+    text-align: center;
 }
