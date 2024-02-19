@@ -34,7 +34,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .section-hero,
@@ -45,6 +44,7 @@ body {
 
 .section-hero {
     padding: 12px 48px 48px;
+    
 }
 
 .header {
@@ -64,11 +64,22 @@ body {
 }
 
 .subsection-hero {
+    margin: 0 auto;
+    padding: 48px;
     display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
+
 .left-section {
-    width: 450px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 .hero-main-text {
@@ -85,6 +96,18 @@ button {
     color: #F9FAF8;
     padding: 8px 24px;
     border-radius: 8px;
+    width: fit-content;
+}
+
+.right-section {
+    max-width: 500px;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .section-info {
@@ -95,11 +118,18 @@ button {
 
 .info-header-text {
     font-size: 36px;
+    margin-bottom: 24px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
+    gap: 24px;
+}
+
+.info-text {
+    margin-top: 12px;
+    max-width: 150px;
 }
 
 .section-quote {
