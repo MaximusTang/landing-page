@@ -79,8 +79,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    flex-grow: 1;
-    flex-basis: 300px; /*Set flex basis to desired min-width for element to shrink THEN wrap*/
+    flex-grow: 1; /* flex-grow: 1 is necessary, otherwise the element will be the size of flex-basis */
+    flex-basis: 300px; /* Set flex basis to desired min-width for element to shrink THEN wrap */
 }
 
 .hero-main-text {
@@ -153,15 +153,15 @@ img {
 .section-quote {
     background-color: #E5E7EB;
     color: #1F2937;
+    padding: 48px;
     display: flex;
     justify-content: center;
-    padding: 48px;
 }
 
 .quote-container {
+    width: 790px;
     display: flex;
     flex-direction: column;
-    width: 790px;
 }
 
 .quote-text {
