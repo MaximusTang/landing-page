@@ -51,6 +51,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
+    gap: 12px;
 }
 
 .logo {
@@ -79,7 +80,7 @@ body {
     flex-direction: column;
     gap: 12px;
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 300px; /*Set flex basis to desired min-width for element to shrink THEN wrap*/
 }
 
 .hero-main-text {
@@ -106,6 +107,7 @@ button {
 }
 
 img {
+    min-width: 200px;
     width: 100%;
     height: auto;
 }
@@ -124,7 +126,23 @@ img {
 .cards {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.card img {
+    border: solid #3882f6 4px;
+    border-radius: 16px;
 }
 
 .info-text {
@@ -152,6 +170,28 @@ img {
 
 .quote-credit {
     align-self: flex-end;
+}
+
+.signup-box {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    margin: 48px auto;
+    padding: 48px;
+    border-radius: 12px;
+    min-width: 200px;
+    max-width: 1150px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;    
+}
+
+.signup-text {
+    flex-grow: 1;
+    flex-basis: 125px;
+    max-width: 500px;
 }
 
 .footer {
